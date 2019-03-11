@@ -1,0 +1,146 @@
+
+
+a {
+  color: #808088;
+  margin: 10px 20px;
+  text-decoration: underline;
+
+}
+
+a:hover {
+  color: #456090;
+}
+.top {
+  background-color: #e3e3ed;
+  position: relative;
+  padding-top: 100px;
+}
+.middle {
+  margin: 50px 0;
+}
+.bottom {
+  background-color: #83b3fc;
+  margin-top: 10px;
+  padding: 50px 0 20px;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: .75rem;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 200px;
+  top: 50px;
+}
+.bottom-cloud {
+  position: absolute;
+  left: 200px;
+  bottom: 450px;
+}
+.mountain {
+
+  top: 700px;
+  bottom: 200px;
+}
+.profile {
+  width: 50%;
+  margin: 50px auto 50px auto;
+  text-align: left;
+  line-height: 2;
+  }
+
+.interests {
+  text-align: center;
+  margin-bottom: 5px;
+
+}
+.interest-row {
+  width: 50%;
+  margin: 5px auto 50px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.contact-me {
+  width: 50%;
+  margin: 5px auto 50px auto;
+}
+
+.first-h2 {
+  font-weight: normal;
+}
+.second-h2 {
+  text-align: center;
+}
+
+.wski-img {
+  float: left;
+  margin-right: 30px;
+}
+
+.butn {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  background: #808089;
+  background-image: -webkit-linear-gradient(top, #00090A, #808089);
+  background-image: -moz-linear-gradient(top, #00090A, #808089);
+  background-image: -ms-linear-gradient(top, #00090A, #808089);
+  background-image: -o-linear-gradient(top, #00090A, #808089);
+  background-image: linear-gradient(to bottom, #00090A, #808089);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: arial, sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.butn:hover {
+  background: #808089;
+  background-image: -webkit-linear-gradient(top, #808089, #00090A);
+  background-image: -moz-linear-gradient(top, #808089, #00090A);
+  background-image: -ms-linear-gradient(top, #808089, #00090A);
+  background-image: -o-linear-gradient(top, #808089, #00090A);
+  background-image: linear-gradient(to bottom, #808089, #00090A);
+  text-decoration: none
+}
+
+body {
+  color: #40514E;
+  background-color: #CDD9E9;
+  margin: 0;
+  text-align: center;
+  font-family: arial, sans-serif;
+
+}
+h1 {
+  margin: 50 auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  color: #808080;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #808082;
+  margin-top: 0;
+  }
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color: #808085;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted #40514E 6px;
+  border-bottom: none;
+  width: 4%;
+}
