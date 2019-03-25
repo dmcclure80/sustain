@@ -1,23 +1,39 @@
-
-
 a {
   color: #808088;
   margin: 10px 20px;
-  text-decoration: underline;
-
+  text-decoration: none;
 }
 
 a:hover {
   color: #456090;
 }
+
+
+.mainhead {
+
+}
+
+.container {
+
+}
+
+section {
+  padding: 35px 0;
+}
+.menu {
+  background-color: #a8adb5;
+}
+
 .top {
   background-color: #e3e3ed;
   position: relative;
   padding-top: 100px;
 }
+
 .middle {
   margin: 50px 0;
 }
+
 .bottom {
   background-color: #83b3fc;
   margin-top: 10px;
@@ -32,30 +48,32 @@ a:hover {
 .top-cloud {
   position: absolute;
   right: 100px;
-  top: 50px;
+  top: 10px;
 }
+
 .bottom-cloud {
   position: absolute;
   left: 150px;
-  bottom: 450px;
+  bottom: 350px;
 }
-.mountain {
 
+.mountain {
   top: 700px;
   bottom: 200px;
 }
+
 .profile {
   width: 50%;
   margin: 50px auto 50px auto;
   text-align: left;
   line-height: 2;
-  }
+}
 
 .interests {
   text-align: center;
   margin-bottom: 5px;
-
 }
+
 .interest-row {
   width: 50%;
   margin: 5px auto 50px auto;
@@ -71,6 +89,7 @@ a:hover {
 .first-h2 {
   font-weight: normal;
 }
+
 .second-h2 {
   text-align: center;
 }
@@ -112,25 +131,25 @@ a:hover {
 body {
   color: #40514E;
   background-color: #CDD9E9;
-  margin: 0;
   text-align: center;
   font-family: arial, sans-serif;
-
 }
+
 h1 {
   margin: 50 auto 0 auto;
   font-family: 'Sacramento', cursive;
   font-size: 5.625rem;
   color: #808080;
 }
+
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   color: #808082;
   margin-top: 0;
-  }
+}
 
-h3{
+h3 {
   font-family: 'Montserrat', sans-serif;
   color: #808085;
 }
