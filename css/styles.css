@@ -1,25 +1,11 @@
-a {
-  color: #808088;
-  margin: 10px 20px;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #456090;
-}
-
-
 .mainhead {
-
+  padding: 7% 15%;
 }
 
 .container {
-
+  padding: auto;
 }
 
-section {
-  padding: 35px 0;
-}
 .menu {
   background-color: #a8adb5;
 }
@@ -75,7 +61,7 @@ section {
 }
 
 .interest-row {
-  width: 50%;
+  width: 70%;
   margin: 5px auto 50px auto;
   text-align: left;
   line-height: 2;
@@ -94,6 +80,11 @@ section {
   text-align: center;
 }
 
+.myname {
+  font-family: 'Sacramento', cursive;
+  font-size: 2.5rem;
+  color: #808080;
+}
 .wski-img {
   float: left;
   margin-right: 30px;
@@ -135,6 +126,16 @@ body {
   font-family: arial, sans-serif;
 }
 
+a {
+  color: #808088;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #456090;
+}
+
 h1 {
   margin: 50 auto 0 auto;
   font-family: 'Sacramento', cursive;
@@ -152,6 +153,10 @@ h2 {
 h3 {
   font-family: 'Montserrat', sans-serif;
   color: #808085;
+}
+
+section {
+  padding: 35px 0;
 }
 
 p {
