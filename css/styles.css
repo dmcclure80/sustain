@@ -80,14 +80,24 @@
   text-align: center;
 }
 
+.para-indent {
+  padding-left: 5em;
+}
+
 .myname {
   font-family: 'Sacramento', cursive;
   font-size: 2.5rem;
   color: #808080;
 }
-.wski-img {
+
+.image-left {
   float: left;
   margin-right: 30px;
+}
+
+.image-right {
+  float: right;
+  margin-left: 30px;
 }
 
 .butn {
@@ -156,7 +166,7 @@ h3 {
 }
 
 section {
-  padding: 35px 0;
+  padding: 0 0;
 }
 
 p {
