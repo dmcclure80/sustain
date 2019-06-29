@@ -137,7 +137,28 @@
   background-image: linear-gradient(to bottom, #808089, #00090A);
   text-decoration: none
 }
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  margin-bottom: 12em;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
 
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 body {
   color: #40514E;
   background-color: #CDD9E9;
