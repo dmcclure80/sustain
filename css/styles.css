@@ -6,6 +6,10 @@
   font-family: cursive;
 }
 
+.seedheader{
+  padding-left: 7%;
+}
+
 .container {
   padding: auto;
 }
