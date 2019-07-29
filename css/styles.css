@@ -2,6 +2,10 @@
   padding: 7% 15%;
 }
 
+.navbar {
+  border-bottom: 40px;
+}
+
 .cursive {
   font-family: cursive;
 }
