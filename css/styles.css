@@ -1,9 +1,19 @@
 .mainhead {
   padding: 7% 15%;
+  margin-top: 40px;
+}
+
+.middle {
+  margin-top: 70px;
+}
+
+.topmargin {
+  margin-top: 70px;
 }
 
 .navbar {
   border-bottom: 40px;
+
 }
 
 .cursive {
@@ -15,7 +25,8 @@
 }
 
 .container {
-  padding: auto;
+  /*padding: auto;*/
+
 }
 
 .menu {
@@ -25,16 +36,16 @@
 .top {
   background-color: #e3e3ed;
   position: relative;
-  padding-top: 100px;
+  margin-top: 70px;
 }
 
 .c1 {background-color: #CDD9E9;}
 
 .c2 {background-color: #e3e3ed;}
 
-.middle {
+/*.middle {
   margin: 50px 0;
-}
+}*/
 
 .bottom {
   background-color: #83b3fc;
@@ -200,6 +211,7 @@ h2 {
 }
 
 h3 {
+  margin-top: 70px;
   font-family: 'Montserrat', sans-serif;
   color: #808085;
 }
