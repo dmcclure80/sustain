@@ -34,6 +34,7 @@
 
 .container {
   /*padding: auto;*/
+  margin-top: 70px;
 
 }
 
@@ -198,8 +199,13 @@
   background-color: #343a40;
 }
 
+.force-scroll{
+  overflow-y: scroll;
+  height: 400px;
+}
 .dropdown-menu li:hover .sub-menu {
   visibility: visible;
+
 }
 
 .dropdown:hover .dropdown-menu {
@@ -242,7 +248,7 @@ h2 {
 }
 
 h3 {
-  margin-top: 70px;
+  margin-top: 75px;
   font-family: 'Montserrat', sans-serif;
   color: #808085;
 }
