@@ -18,85 +18,10 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li>
-          <a class="nav-link js-scroll-trigger" href="https://dmcclure80.github.io/sustain">Home</a>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sustainable
-            <span class="caret"></span></a>
-          <ul class="dropdown-menu dropdown-primary force-scroll">
-
-            <li class="nav-item active">
-              <a class="nav-link js-scroll-trigger" href="index.html#resonance">Resonance<span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#highresource">Resources</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#soil">Soil</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#water">Water</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#climatechange">Climate</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#energy">Energy</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#health">Health</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#building">Building</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#love">Love</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#stats">Stats</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#electricvehicle">EV's</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#renewable">Renewable</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#diversity">Diversity</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#peace">Peace</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#educate">Educate</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#zerowaste">Zero Waste</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#economy">Economy</a>
-            </li>
-          </ul>
-        <li>
-          <a class="nav-link js-scroll-trigger" href="why.html">Why</a>
-        </li>
+      <div w3-include-html="menu.html"></div>
+      <li>
+        <a class="nav-link js-scroll-trigger" href="why.html">Why</a>
+      </li>
       </ul>
     </div>
   </nav>
@@ -166,6 +91,42 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+  <script>
+    includeHTML();
+  </script>
 </body>
 
 </html>
