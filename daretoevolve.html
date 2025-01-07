@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+  
 <head>
   <title>PDF in HTML</title>
+  
 </head>
 <style>
   .pdf {
@@ -30,12 +32,25 @@
 
 <body>
   <h1>References for Dare To Evolve</h1>
-  <embed
-	src="https://www.sustainall.us/DTEReferences.pdf"
+  <object
+	data="https://www.sustainall.us/DTEReferences.pdf"
 	type="application/pdf"
 	width="100%"
-	height="500px"
-/>
+	height="100%"
+>
+	<iframe
+		src="https://www.sustainall.us/DTEReferences.pdf"
+		width="100%"
+		height="100%"
+		style="border: none;"
+	>
+		<p>
+			Your browser does not support PDFs.
+			<a href="https://www.sustainall.us/DTEReferences.pdf">Download the PDF</a>
+			.
+		</p>
+	</iframe>
+</object>
 
 </body>
 </html>
